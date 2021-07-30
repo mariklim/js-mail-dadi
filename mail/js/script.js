@@ -16,7 +16,7 @@ for (var i = 0; i < listMail.length; i++){
 if (controllo == true) {
     document.getElementById("messagio").innerHTML = "sei loggato";
 }
-}
+
 else {
     document.getElementById("messagio").innerHTML = "non sei loggato";
 
