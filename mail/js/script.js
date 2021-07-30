@@ -6,12 +6,21 @@
 var listMail = ["mail1@gmail.com", "mail2@gmail.com", "mail3@gmail.com"]
 var mail = prompt("Inserisci la tua mail");
 
+var controllo = false
 for (var i = 0; i < listMail.length; i++){
     if (mail == listMail[i]){
-        document.getElementById("messagio").innerHTML = "ok sei loggato"}
-    else{
-        document.getElementById("messagio").innerHTML = "non sei loggato";}
+        controllo = true
     }
+}
+
+if (controllo == true) {
+    document.getElementById("messagio").innerHTML = "sei loggato";
+}
+}
+else {
+    document.getElementById("messagio").innerHTML = "non sei loggato";
+
+}
 
 
 
